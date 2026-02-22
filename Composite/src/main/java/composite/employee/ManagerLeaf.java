@@ -1,11 +1,12 @@
 package composite.employee;
 
-import composite.component.PayableNode;
+import composite.component.PayableComponent;
 
-public class FrontendDeveloper implements PayableNode {
+// 2. Leaf (단일 객체)
+public class ManagerLeaf implements PayableComponent {
     private int salary;
 
-    public FrontendDeveloper(int salary) {
+    public ManagerLeaf(int salary) {
         this.salary = salary;
     }
 
